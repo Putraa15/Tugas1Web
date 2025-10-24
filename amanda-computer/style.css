@@ -1,0 +1,36 @@
+/* style.css - Amanda Computer */
+:root{
+  --primary:#0b60a3;
+  --accent:#ffaa00;
+  --card-bg: #ffffff;
+  --muted:#666;
+}
+*{box-sizing:border-box}
+body{font-family:Inter,Arial,Helvetica,sans-serif;margin:0;background:#f4f6f8;color:#222}
+.container{max-width:1100px;margin:0 auto;padding:20px}
+.header-inner{display:flex;align-items:center;justify-content:space-between}
+.logo{margin:0;color:var(--card-bg);font-size:22px;background:var(--primary);padding:6px 10px;border-radius:6px}
+header{background:var(--primary);color:#fff;padding:12px 0}
+nav ul{list-style:none;margin:0;padding:0;display:flex;gap:16px}
+nav a{color:#fff;text-decoration:none;padding:6px 8px;border-radius:4px}
+nav a.active{background:rgba(255,255,255,0.12)}
+.banner{color:#fff;padding:80px 0;background-size:cover;background-position:center}
+.banner-inner{background:rgba(0,0,0,0.25);padding:30px;border-radius:10px;display:inline-block}
+.banner h2{margin:0 0 8px;font-size:32px}
+.banner p{margin:0 0 12px}
+button#btnScroll{background:var(--accent);border:none;padding:10px 16px;border-radius:6px;cursor:pointer}
+section h2{margin-top:0}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin-top:16px}
+.card{background:var(--card-bg);border-radius:10px;padding:12px;box-shadow:0 4px 12px rgba(0,0,0,0.06);text-align:center;transition:transform .25s}
+.card img{max-width:100%;border-radius:8px;height:200px;object-fit:cover}
+.card h3{margin:10px 0 6px}
+.card p{color:var(--muted);font-size:14px}
+.about{margin:28px 0;padding:20px;background:#fff;border-radius:10px;box-shadow:0 4px 12px rgba(0,0,0,0.03)}
+footer{background:var(--primary);color:#fff;padding:16px;margin-top:30px;text-align:center}
+input[type=text], input[type=email], select, textarea{width:100%;padding:10px;border-radius:6px;border:1px solid #ddd;margin-bottom:10px}
+button[type=submit]{background:var(--primary);color:#fff;border:none;padding:10px 14px;border-radius:6px;cursor:pointer}
+.hasil{margin-top:16px;padding:12px;background:#eef9ff;border-left:4px solid var(--primary);border-radius:6px}
+@media (max-width:600px){
+  .banner{padding:40px 10px}
+  .banner h2{font-size:22px}
+}
